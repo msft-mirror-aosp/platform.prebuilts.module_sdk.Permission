@@ -1,37 +1,163 @@
-
+// This is auto-generated. DO NOT EDIT.
 
 package {
+    // A default list here prevents the license LSC from adding its own list which would
+    // be unnecessary as every module in the sdk already has its own licenses property.
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
 java_sdk_library_import {
-    name: "framework-permission",
-    owner: "google",
-    prefer: false,
-    shared_library: false,
+    name: "permission-module-sdk_framework-permission@current",
+    sdk_member_name: "framework-permission",
+    visibility: ["//visibility:public"],
     apex_available: [
         "com.android.permission",
         "test_com.android.permission",
     ],
+    licenses: ["permission-module-sdk_Android-Apache-2.0@current"],
+    shared_library: false,
     public: {
-        jars: ["current/public/framework-permission.jar"],
-        stub_srcs: ["current/public/framework-permission.srcjar"],
-        current_api: "current/public/framework-permission.txt",
-        removed_api: "current/public/framework-permission-removed.txt",
+        jars: ["sdk_library/public/framework-permission-stubs.jar"],
+        stub_srcs: ["sdk_library/public/framework-permission.srcjar"],
+        current_api: "sdk_library/public/framework-permission.txt",
+        removed_api: "sdk_library/public/framework-permission-removed.txt",
         sdk_version: "module_current",
     },
     system: {
-        jars: ["current/system/framework-permission.jar"],
-        stub_srcs: ["current/system/framework-permission.srcjar"],
-        current_api: "current/system/framework-permission.txt",
-        removed_api: "current/system/framework-permission-removed.txt",
+        jars: ["sdk_library/system/framework-permission-stubs.jar"],
+        stub_srcs: ["sdk_library/system/framework-permission.srcjar"],
+        current_api: "sdk_library/system/framework-permission.txt",
+        removed_api: "sdk_library/system/framework-permission-removed.txt",
         sdk_version: "module_current",
     },
     module_lib: {
-        jars: ["current/module_lib/framework-permission.jar"],
-        stub_srcs: ["current/module_lib/framework-permission.srcjar"],
-        current_api: "current/module_lib/framework-permission.txt",
-        removed_api: "current/module_lib/framework-permission-removed.txt",
+        jars: ["sdk_library/module-lib/framework-permission-stubs.jar"],
+        stub_srcs: ["sdk_library/module-lib/framework-permission.srcjar"],
+        current_api: "sdk_library/module-lib/framework-permission.txt",
+        removed_api: "sdk_library/module-lib/framework-permission-removed.txt",
         sdk_version: "module_current",
     },
+}
+
+java_sdk_library_import {
+    name: "framework-permission",
+    prefer: false,
+    visibility: ["//visibility:public"],
+    apex_available: [
+        "com.android.permission",
+        "test_com.android.permission",
+    ],
+    licenses: ["permission-module-sdk_Android-Apache-2.0"],
+    shared_library: false,
+    public: {
+        jars: ["sdk_library/public/framework-permission-stubs.jar"],
+        stub_srcs: ["sdk_library/public/framework-permission.srcjar"],
+        current_api: "sdk_library/public/framework-permission.txt",
+        removed_api: "sdk_library/public/framework-permission-removed.txt",
+        sdk_version: "module_current",
+    },
+    system: {
+        jars: ["sdk_library/system/framework-permission-stubs.jar"],
+        stub_srcs: ["sdk_library/system/framework-permission.srcjar"],
+        current_api: "sdk_library/system/framework-permission.txt",
+        removed_api: "sdk_library/system/framework-permission-removed.txt",
+        sdk_version: "module_current",
+    },
+    module_lib: {
+        jars: ["sdk_library/module-lib/framework-permission-stubs.jar"],
+        stub_srcs: ["sdk_library/module-lib/framework-permission.srcjar"],
+        current_api: "sdk_library/module-lib/framework-permission.txt",
+        removed_api: "sdk_library/module-lib/framework-permission-removed.txt",
+        sdk_version: "module_current",
+    },
+}
+
+java_sdk_library_import {
+    name: "permission-module-sdk_framework-permission-s@current",
+    sdk_member_name: "framework-permission-s",
+    visibility: ["//visibility:public"],
+    apex_available: [
+        "com.android.permission",
+        "test_com.android.permission",
+    ],
+    licenses: ["permission-module-sdk_Android-Apache-2.0@current"],
+    shared_library: false,
+    public: {
+        jars: ["sdk_library/public/framework-permission-s-stubs.jar"],
+        stub_srcs: ["sdk_library/public/framework-permission-s.srcjar"],
+        current_api: "sdk_library/public/framework-permission-s.txt",
+        removed_api: "sdk_library/public/framework-permission-s-removed.txt",
+        sdk_version: "module_current",
+    },
+    system: {
+        jars: ["sdk_library/system/framework-permission-s-stubs.jar"],
+        stub_srcs: ["sdk_library/system/framework-permission-s.srcjar"],
+        current_api: "sdk_library/system/framework-permission-s.txt",
+        removed_api: "sdk_library/system/framework-permission-s-removed.txt",
+        sdk_version: "module_current",
+    },
+    module_lib: {
+        jars: ["sdk_library/module-lib/framework-permission-s-stubs.jar"],
+        stub_srcs: ["sdk_library/module-lib/framework-permission-s.srcjar"],
+        current_api: "sdk_library/module-lib/framework-permission-s.txt",
+        removed_api: "sdk_library/module-lib/framework-permission-s-removed.txt",
+        sdk_version: "module_current",
+    },
+}
+
+java_sdk_library_import {
+    name: "framework-permission-s",
+    prefer: false,
+    visibility: ["//visibility:public"],
+    apex_available: [
+        "com.android.permission",
+        "test_com.android.permission",
+    ],
+    licenses: ["permission-module-sdk_Android-Apache-2.0"],
+    shared_library: false,
+    public: {
+        jars: ["sdk_library/public/framework-permission-s-stubs.jar"],
+        stub_srcs: ["sdk_library/public/framework-permission-s.srcjar"],
+        current_api: "sdk_library/public/framework-permission-s.txt",
+        removed_api: "sdk_library/public/framework-permission-s-removed.txt",
+        sdk_version: "module_current",
+    },
+    system: {
+        jars: ["sdk_library/system/framework-permission-s-stubs.jar"],
+        stub_srcs: ["sdk_library/system/framework-permission-s.srcjar"],
+        current_api: "sdk_library/system/framework-permission-s.txt",
+        removed_api: "sdk_library/system/framework-permission-s-removed.txt",
+        sdk_version: "module_current",
+    },
+    module_lib: {
+        jars: ["sdk_library/module-lib/framework-permission-s-stubs.jar"],
+        stub_srcs: ["sdk_library/module-lib/framework-permission-s.srcjar"],
+        current_api: "sdk_library/module-lib/framework-permission-s.txt",
+        removed_api: "sdk_library/module-lib/framework-permission-s-removed.txt",
+        sdk_version: "module_current",
+    },
+}
+
+license {
+    name: "permission-module-sdk_Android-Apache-2.0@current",
+    sdk_member_name: "Android-Apache-2.0",
+    visibility: ["//visibility:private"],
+    license_kinds: ["SPDX-license-identifier-Apache-2.0"],
+    license_text: ["licenses/build/soong/licenses/LICENSE"],
+}
+
+license {
+    name: "permission-module-sdk_Android-Apache-2.0",
+    visibility: ["//visibility:private"],
+    license_kinds: ["SPDX-license-identifier-Apache-2.0"],
+    license_text: ["licenses/build/soong/licenses/LICENSE"],
+}
+
+sdk_snapshot {
+    name: "permission-module-sdk@current",
+    visibility: ["//visibility:public"],
+    java_sdk_libs: [
+        "permission-module-sdk_framework-permission@current",
+        "permission-module-sdk_framework-permission-s@current",
+    ],
 }
