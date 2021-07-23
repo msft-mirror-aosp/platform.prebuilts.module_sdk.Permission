@@ -67,6 +67,10 @@ java_sdk_library_import {
     ],
     licenses: ["permission-module-sdk_Android-Apache-2.0@current"],
     shared_library: false,
+    permitted_packages: [
+        "android.permission",
+        "android.app.role",
+    ],
     public: {
         jars: ["sdk_library/public/framework-permission-stubs.jar"],
         stub_srcs: ["sdk_library/public/framework-permission.srcjar"],
@@ -105,6 +109,10 @@ module_java_sdk_library_import {
     ],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
     shared_library: false,
+    permitted_packages: [
+        "android.permission",
+        "android.app.role",
+    ],
     public: {
         jars: ["sdk_library/public/framework-permission-stubs.jar"],
         stub_srcs: ["sdk_library/public/framework-permission.srcjar"],
@@ -138,6 +146,11 @@ java_sdk_library_import {
     ],
     licenses: ["permission-module-sdk_Android-Apache-2.0@current"],
     shared_library: false,
+    permitted_packages: [
+        "android.permission",
+        "android.app.role",
+        "com.android.permission",
+    ],
     public: {
         jars: ["sdk_library/public/framework-permission-s-stubs.jar"],
         stub_srcs: ["sdk_library/public/framework-permission-s.srcjar"],
@@ -176,6 +189,11 @@ module_java_sdk_library_import {
     ],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
     shared_library: false,
+    permitted_packages: [
+        "android.permission",
+        "android.app.role",
+        "com.android.permission",
+    ],
     public: {
         jars: ["sdk_library/public/framework-permission-s-stubs.jar"],
         stub_srcs: ["sdk_library/public/framework-permission-s.srcjar"],
