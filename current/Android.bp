@@ -27,7 +27,7 @@ prebuilt_bootclasspath_fragment {
 
 prebuilt_bootclasspath_fragment {
     name: "com.android.permission-bootclasspath-fragment",
-    prefer: false,
+    prefer: true,
     visibility: ["//visibility:public"],
     apex_available: ["com.android.permission"],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
@@ -83,7 +83,7 @@ java_sdk_library_import {
 
 java_sdk_library_import {
     name: "framework-permission",
-    prefer: false,
+    prefer: true,
     visibility: ["//visibility:public"],
     apex_available: [
         "com.android.permission",
