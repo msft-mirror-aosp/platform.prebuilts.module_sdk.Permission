@@ -6,6 +6,7 @@ soong_config_module_type_import {
     module_types: [
         "module_java_sdk_library_import",
         "module_prebuilt_bootclasspath_fragment",
+        "module_prebuilt_systemserverclasspath_fragment",
     ],
 }
 
@@ -25,18 +26,25 @@ prebuilt_bootclasspath_fragment {
         "permission-module-sdk_framework-permission@current",
         "permission-module-sdk_framework-permission-s@current",
     ],
+    fragments: [
+        {
+            apex: "com.android.art",
+            module: "art-bootclasspath-fragment",
+        },
+    ],
     hidden_api: {
-        stub_flags: "hiddenapi/stub-flags.csv",
         annotation_flags: "hiddenapi/annotation-flags.csv",
         metadata: "hiddenapi/metadata.csv",
         index: "hiddenapi/index.csv",
-        all_flags: "hiddenapi/all-flags.csv",
+        signature_patterns: "hiddenapi/signature-patterns.csv",
+        filtered_stub_flags: "hiddenapi/filtered-stub-flags.csv",
+        filtered_flags: "hiddenapi/filtered-flags.csv",
     },
 }
 
 module_prebuilt_bootclasspath_fragment {
     name: "com.android.permission-bootclasspath-fragment",
-    // Do not prefer prebuilt if SOONG_CONFIG_ANDROID_module_build_from_source is true.
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
@@ -50,12 +58,19 @@ module_prebuilt_bootclasspath_fragment {
         "framework-permission",
         "framework-permission-s",
     ],
+    fragments: [
+        {
+            apex: "com.android.art",
+            module: "art-bootclasspath-fragment",
+        },
+    ],
     hidden_api: {
-        stub_flags: "hiddenapi/stub-flags.csv",
         annotation_flags: "hiddenapi/annotation-flags.csv",
         metadata: "hiddenapi/metadata.csv",
         index: "hiddenapi/index.csv",
-        all_flags: "hiddenapi/all-flags.csv",
+        signature_patterns: "hiddenapi/signature-patterns.csv",
+        filtered_stub_flags: "hiddenapi/filtered-stub-flags.csv",
+        filtered_flags: "hiddenapi/filtered-flags.csv",
     },
 }
 
@@ -101,7 +116,7 @@ java_sdk_library_import {
 
 module_java_sdk_library_import {
     name: "framework-permission",
-    // Do not prefer prebuilt if SOONG_CONFIG_ANDROID_module_build_from_source is true.
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
@@ -158,6 +173,7 @@ java_sdk_library_import {
     permitted_packages: [
         "android.permission",
         "android.app.role",
+        "android.safetycenter",
         "com.android.permission",
     ],
     public: {
@@ -188,7 +204,7 @@ java_sdk_library_import {
 
 module_java_sdk_library_import {
     name: "framework-permission-s",
-    // Do not prefer prebuilt if SOONG_CONFIG_ANDROID_module_build_from_source is true.
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
@@ -205,6 +221,7 @@ module_java_sdk_library_import {
     permitted_packages: [
         "android.permission",
         "android.app.role",
+        "android.safetycenter",
         "com.android.permission",
     ],
     public: {
@@ -263,7 +280,7 @@ java_sdk_library_import {
 
 module_java_sdk_library_import {
     name: "service-permission",
-    // Do not prefer prebuilt if SOONG_CONFIG_ANDROID_module_build_from_source is true.
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
@@ -310,6 +327,30 @@ license {
     license_text: ["licenses/build/soong/licenses/LICENSE"],
 }
 
+prebuilt_systemserverclasspath_fragment {
+    name: "permission-module-sdk_com.android.permission-systemserverclasspath-fragment@current",
+    sdk_member_name: "com.android.permission-systemserverclasspath-fragment",
+    visibility: ["//visibility:public"],
+    apex_available: ["com.android.permission"],
+    licenses: ["permission-module-sdk_Android-Apache-2.0@current"],
+    contents: ["permission-module-sdk_service-permission@current"],
+}
+
+module_prebuilt_systemserverclasspath_fragment {
+    name: "com.android.permission-systemserverclasspath-fragment",
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    visibility: ["//visibility:public"],
+    apex_available: ["com.android.permission"],
+    licenses: ["permission-module-sdk_Android-Apache-2.0"],
+    contents: ["service-permission"],
+}
+
 sdk_snapshot {
     name: "permission-module-sdk@current",
     visibility: ["//visibility:public"],
@@ -319,4 +360,5 @@ sdk_snapshot {
         "permission-module-sdk_framework-permission-s@current",
         "permission-module-sdk_service-permission@current",
     ],
+    systemserverclasspath_fragments: ["permission-module-sdk_com.android.permission-systemserverclasspath-fragment@current"],
 }
