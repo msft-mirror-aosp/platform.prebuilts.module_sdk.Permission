@@ -1,4 +1,5 @@
 android/app/role/**
 android/permission/PermissionState
+android/permission/jarjar/**
 android/safetycenter/**
-com/android/permission/**
+android/safetylabel/**
