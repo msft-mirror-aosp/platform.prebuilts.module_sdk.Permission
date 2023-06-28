@@ -13,7 +13,7 @@ prebuilt_bootclasspath_fragment {
         config_namespace: "permission_module",
         var_name: "source_build",
     },
-    visibility: ["//visibility:public"],
+    visibility: ["//packages/modules/Permission:__subpackages__"],
     apex_available: ["com.android.permission"],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
     contents: [
@@ -172,7 +172,7 @@ prebuilt_systemserverclasspath_fragment {
         config_namespace: "permission_module",
         var_name: "source_build",
     },
-    visibility: ["//visibility:public"],
+    visibility: ["//packages/modules/Permission:__subpackages__"],
     apex_available: ["com.android.permission"],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
     contents: ["service-permission"],
