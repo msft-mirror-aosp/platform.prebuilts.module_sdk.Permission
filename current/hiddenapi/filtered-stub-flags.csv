@@ -1,3 +1,8 @@
+Landroid/app/ecm/EnhancedConfirmationFrameworkInitializer$$ExternalSyntheticLambda0;->createService(Landroid/content/Context;Landroid/os/IBinder;)Ljava/lang/Object;,system-api,test-api
+Landroid/app/ecm/IEnhancedConfirmationManager$Default;->asBinder()Landroid/os/IBinder;,public-api,system-api,test-api
+Landroid/app/ecm/IEnhancedConfirmationManager$Stub$Proxy;->asBinder()Landroid/os/IBinder;,public-api,system-api,test-api
+Landroid/app/ecm/IEnhancedConfirmationManager$Stub;->asBinder()Landroid/os/IBinder;,public-api,system-api,test-api
+Landroid/app/ecm/IEnhancedConfirmationManager$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z,public-api,system-api,test-api
 Landroid/app/role/IOnRoleHoldersChangedListener$Default;->asBinder()Landroid/os/IBinder;,public-api,system-api,test-api
 Landroid/app/role/IOnRoleHoldersChangedListener$Stub$Proxy;->asBinder()Landroid/os/IBinder;,public-api,system-api,test-api
 Landroid/app/role/IOnRoleHoldersChangedListener$Stub;->asBinder()Landroid/os/IBinder;,public-api,system-api,test-api
@@ -11,10 +16,12 @@ Landroid/app/role/IRoleManager$Stub$Proxy;->asBinder()Landroid/os/IBinder;,publi
 Landroid/app/role/IRoleManager$Stub;->asBinder()Landroid/os/IBinder;,public-api,system-api,test-api
 Landroid/app/role/IRoleManager$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z,public-api,system-api,test-api
 Landroid/app/role/OnRoleHoldersChangedListener;->onRoleHoldersChanged(Ljava/lang/String;Landroid/os/UserHandle;)V,system-api,test-api
+Landroid/app/role/RoleControllerManager$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/role/RoleControllerManager$$ExternalSyntheticLambda1;->onResult(Landroid/os/Bundle;)V,system-api,test-api
 Landroid/app/role/RoleControllerManager$$ExternalSyntheticLambda2;->accept(Ljava/lang/Object;Ljava/lang/Object;)V,core-platform-api,public-api,system-api,test-api
-Landroid/app/role/RoleControllerManager$$ExternalSyntheticLambda5;->apply(Ljava/lang/Object;)Ljava/lang/Object;,core-platform-api,public-api,system-api,test-api
-Landroid/app/role/RoleControllerManager$$ExternalSyntheticLambda6;->run()V,core-platform-api,public-api,system-api,test-api
+Landroid/app/role/RoleControllerManager$$ExternalSyntheticLambda3;->run()V,core-platform-api,public-api,system-api,test-api
+Landroid/app/role/RoleControllerManager$$ExternalSyntheticLambda5;->accept(Ljava/lang/Object;Ljava/lang/Object;)V,core-platform-api,public-api,system-api,test-api
+Landroid/app/role/RoleControllerManager$$ExternalSyntheticLambda6;->apply(Ljava/lang/Object;)Ljava/lang/Object;,core-platform-api,public-api,system-api,test-api
 Landroid/app/role/RoleControllerManager$$ExternalSyntheticLambda9;->accept(Ljava/lang/Object;Ljava/lang/Object;)V,core-platform-api,public-api,system-api,test-api
 Landroid/app/role/RoleControllerService$1$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/role/RoleControllerService$1$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,system-api,test-api
@@ -35,6 +42,8 @@ Landroid/app/role/RoleControllerService;->onRemoveRoleHolder(Ljava/lang/String;L
 Landroid/app/role/RoleFrameworkInitializer$$ExternalSyntheticLambda0;->createService(Landroid/content/Context;Landroid/os/IBinder;)Ljava/lang/Object;,system-api,test-api
 Landroid/app/role/RoleManager$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/role/RoleManager$$ExternalSyntheticLambda1;->onResult(Landroid/os/Bundle;)V,system-api,test-api
+Landroid/app/role/RoleManager$$ExternalSyntheticLambda2;->run()V,core-platform-api,public-api,system-api,test-api
+Landroid/app/role/RoleManager$$ExternalSyntheticLambda3;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/role/RoleManager$OnRoleHoldersChangedListenerDelegate$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/role/RoleManager;->MANAGE_HOLDERS_FLAG_DONT_KILL_APP:I,system-api,test-api
 Landroid/app/role/RoleManager;->ROLE_ASSISTANT:Ljava/lang/String;,public-api,system-api,test-api
@@ -73,9 +82,9 @@ Landroid/app/role/RoleManager;->setBypassingRoleQualification(Z)V,system-api,tes
 Landroid/app/role/RoleManager;->setDefaultApplication(Ljava/lang/String;Ljava/lang/String;ILjava/util/concurrent/Executor;Ljava/util/function/Consumer;)V,system-api,test-api
 Landroid/app/role/RoleManager;->setRoleNamesFromController(Ljava/util/List;)V,system-api,test-api
 Landroid/permission/jarjar/android/os/HandlerExecutor;->execute(Ljava/lang/Runnable;)V,core-platform-api,public-api,system-api,test-api
-Landroid/permission/jarjar/com/android/internal/infra/AndroidFuture$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
+Landroid/permission/jarjar/com/android/internal/infra/AndroidFuture$$ExternalSyntheticLambda0;->execute(Ljava/lang/Runnable;)V,core-platform-api,public-api,system-api,test-api
 Landroid/permission/jarjar/com/android/internal/infra/AndroidFuture$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,system-api,test-api
-Landroid/permission/jarjar/com/android/internal/infra/AndroidFuture$$ExternalSyntheticLambda2;->execute(Ljava/lang/Runnable;)V,core-platform-api,public-api,system-api,test-api
+Landroid/permission/jarjar/com/android/internal/infra/AndroidFuture$$ExternalSyntheticLambda2;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/permission/jarjar/com/android/internal/infra/AndroidFuture$$ExternalSyntheticLambda3;->apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;,core-platform-api,public-api,system-api,test-api
 Landroid/permission/jarjar/com/android/internal/infra/AndroidFuture$$ExternalSyntheticLambda4;->accept(Ljava/lang/Object;Ljava/lang/Object;)V,core-platform-api,public-api,system-api,test-api
 Landroid/permission/jarjar/com/android/internal/infra/AndroidFuture$2;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
@@ -111,7 +120,7 @@ Landroid/permission/jarjar/com/android/internal/infra/IAndroidFuture$Default;->a
 Landroid/permission/jarjar/com/android/internal/infra/IAndroidFuture$Stub$Proxy;->asBinder()Landroid/os/IBinder;,public-api,system-api,test-api
 Landroid/permission/jarjar/com/android/internal/infra/IAndroidFuture$Stub;->asBinder()Landroid/os/IBinder;,public-api,system-api,test-api
 Landroid/permission/jarjar/com/android/internal/infra/IAndroidFuture$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z,public-api,system-api,test-api
-Landroid/permission/jarjar/com/android/internal/infra/ServiceConnector$Impl$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,system-api,test-api
+Landroid/permission/jarjar/com/android/internal/infra/ServiceConnector$Impl$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/permission/jarjar/com/android/internal/infra/ServiceConnector$Impl$$ExternalSyntheticLambda2;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/permission/jarjar/com/android/internal/infra/ServiceConnector$Impl$CompletionAwareJob;->accept(Ljava/lang/Object;Ljava/lang/Object;)V,core-platform-api,public-api,system-api,test-api
 Landroid/permission/jarjar/com/android/internal/infra/ServiceConnector$Impl$CompletionAwareJob;->cancel(Z)Z,core-platform-api,public-api,system-api,test-api
