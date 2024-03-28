@@ -12,6 +12,16 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
+apex_contributions_defaults {
+    name: "permission-module-sdk.contributions",
+    contents: [
+        "prebuilt_framework-permission-s-compat-config",
+        "prebuilt_framework-permission",
+        "prebuilt_framework-permission-s",
+        "prebuilt_service-permission",
+    ],
+}
+
 prebuilt_bootclasspath_fragment {
     name: "com.android.permission-bootclasspath-fragment",
     // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "permission_module" is true.
@@ -40,6 +50,18 @@ prebuilt_bootclasspath_fragment {
         filtered_stub_flags: "hiddenapi/filtered-stub-flags.csv",
         filtered_flags: "hiddenapi/filtered-flags.csv",
     },
+}
+
+prebuilt_platform_compat_config {
+    name: "framework-permission-s-compat-config",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "permission_module" is true.
+    use_source_config_var: {
+        config_namespace: "permission_module",
+        var_name: "source_build",
+    },
+    visibility: ["//packages/modules/Permission:__subpackages__"],
+    licenses: ["permission-module-sdk_Android-Apache-2.0"],
+    metadata: "compat_configs/framework-permission-s-compat-config/framework-permission-s-compat-config_meta.xml",
 }
 
 java_sdk_library_import {
@@ -103,6 +125,7 @@ java_sdk_library_import {
     permitted_packages: [
         "android.permission",
         "android.app.role",
+        "android.app.ecm",
         "android.safetycenter",
         "android.safetylabel",
     ],
@@ -148,6 +171,7 @@ java_sdk_library_import {
     shared_library: false,
     permitted_packages: [
         "com.android.access",
+        "com.android.ecm",
         "com.android.permission",
         "com.android.role",
         "com.android.safetycenter",
