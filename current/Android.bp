@@ -18,6 +18,11 @@ apex_contributions_defaults {
 
 prebuilt_bootclasspath_fragment {
     name: "com.android.permission-bootclasspath-fragment",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "permission_module" is true.
+    use_source_config_var: {
+        config_namespace: "permission_module",
+        var_name: "source_build",
+    },
     visibility: ["//packages/modules/Permission:__subpackages__"],
     apex_available: ["com.android.permission"],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
@@ -43,6 +48,11 @@ prebuilt_bootclasspath_fragment {
 
 prebuilt_platform_compat_config {
     name: "framework-permission-s-compat-config",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "permission_module" is true.
+    use_source_config_var: {
+        config_namespace: "permission_module",
+        var_name: "source_build",
+    },
     visibility: ["//packages/modules/Permission:__subpackages__"],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
     metadata: "compat_configs/framework-permission-s-compat-config/framework-permission-s-compat-config_meta.xml",
@@ -50,6 +60,11 @@ prebuilt_platform_compat_config {
 
 java_sdk_library_import {
     name: "framework-permission",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "permission_module" is true.
+    use_source_config_var: {
+        config_namespace: "permission_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: [
         "com.android.permission",
@@ -89,6 +104,11 @@ java_sdk_library_import {
 
 java_sdk_library_import {
     name: "framework-permission-s",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "permission_module" is true.
+    use_source_config_var: {
+        config_namespace: "permission_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: [
         "com.android.permission",
@@ -131,6 +151,11 @@ java_sdk_library_import {
 
 java_sdk_library_import {
     name: "service-permission",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "permission_module" is true.
+    use_source_config_var: {
+        config_namespace: "permission_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: [
         "com.android.permission",
@@ -172,6 +197,11 @@ license {
 
 prebuilt_systemserverclasspath_fragment {
     name: "com.android.permission-systemserverclasspath-fragment",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "permission_module" is true.
+    use_source_config_var: {
+        config_namespace: "permission_module",
+        var_name: "source_build",
+    },
     visibility: ["//packages/modules/Permission:__subpackages__"],
     apex_available: ["com.android.permission"],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
