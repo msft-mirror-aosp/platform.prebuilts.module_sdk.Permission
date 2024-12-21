@@ -18,7 +18,7 @@ apex_contributions_defaults {
 
 prebuilt_bootclasspath_fragment {
     name: "com.android.permission-bootclasspath-fragment",
-    visibility: ["//packages/modules/Permission:__subpackages__"],
+    visibility: ["//visibility:public"],
     apex_available: ["com.android.permission"],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
     contents: [
@@ -43,7 +43,7 @@ prebuilt_bootclasspath_fragment {
 
 prebuilt_platform_compat_config {
     name: "framework-permission-s-compat-config",
-    visibility: ["//packages/modules/Permission:__subpackages__"],
+    visibility: ["//visibility:public"],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
     metadata: "compat_configs/framework-permission-s-compat-config/framework-permission-s-compat-config_meta.xml",
 }
@@ -172,7 +172,7 @@ license {
 
 prebuilt_systemserverclasspath_fragment {
     name: "com.android.permission-systemserverclasspath-fragment",
-    visibility: ["//packages/modules/Permission:__subpackages__"],
+    visibility: ["//visibility:public"],
     apex_available: ["com.android.permission"],
     licenses: ["permission-module-sdk_Android-Apache-2.0"],
     contents: ["service-permission"],
