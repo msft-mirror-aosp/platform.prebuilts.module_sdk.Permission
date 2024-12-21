@@ -157,6 +157,8 @@ Landroid/permission/jarjar/com/android/internal/infra/ServiceConnector$Impl;->on
 Landroid/permission/jarjar/com/android/internal/infra/ServiceConnector$Impl;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/permission/jarjar/com/android/internal/infra/ServiceConnector$Impl;->toString()Ljava/lang/String;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda0;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda10;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda11;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda1;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda2;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda3;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
@@ -164,6 +166,8 @@ Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$Exte
 Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda5;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda6;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda7;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda8;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/permission/jarjar/com/android/permission/flags/CustomFeatureFlags$$ExternalSyntheticLambda9;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/safetycenter/IOnSafetyCenterDataChangedListener$Default;->asBinder()Landroid/os/IBinder;,public-api,sdk,system-api,test-api
 Landroid/safetycenter/IOnSafetyCenterDataChangedListener$Stub$Proxy;->asBinder()Landroid/os/IBinder;,public-api,sdk,system-api,test-api
 Landroid/safetycenter/IOnSafetyCenterDataChangedListener$Stub;->asBinder()Landroid/os/IBinder;,public-api,sdk,system-api,test-api
