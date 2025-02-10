@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<config>
-  <compat-change enableSinceTargetSdk="35" id="303742236" name="ROLE_MANAGER_USER_HANDLE_AWARE">
-    <meta-data definedIn="android.app.role.RoleManager" sourcePosition="packages/modules/Permission/framework-s/java/android/app/role/RoleManager.java:248" />
-  </compat-change>
-</config>
